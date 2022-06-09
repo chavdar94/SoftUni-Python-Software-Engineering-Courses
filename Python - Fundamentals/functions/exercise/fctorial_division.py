@@ -2,12 +2,15 @@
 
 
 def factorial_func(n1, n2):
+    # easier way to solve the factorials using math library
     # if n1 >= 0 and n2 >= 0:
     #     first_fact = factorial(n1)
     #     second_fact = factorial(n2)
     #     return f"{first_fact / second_fact:.2f}"
     # else:
     #     return "Cant factorial negative number!"
+    
+    # sloving the factorials with no libraries
     if n1 >= 0:
         first_sum = 1
         for i in range(1, n1 + 1):
