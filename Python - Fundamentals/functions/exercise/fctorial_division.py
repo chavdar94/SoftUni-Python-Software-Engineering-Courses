@@ -7,7 +7,7 @@ def factorial_func(n1, n2):
     #     first_fact = factorial(n1)
     #     second_fact = factorial(n2)
     #     return f"{first_fact / second_fact:.2f}"
-
+    #
     #  Using no libraries and also storing the sums in variables ,so we can access each sum separately
     # if n1 >= 0:
     #     first_sum = 1
@@ -20,7 +20,7 @@ def factorial_func(n1, n2):
     #         second_sum *= i
     # result = first_sum / second_sum
     # return f"{result:.2f}"
-
+    #
     #  Shortest way to find the final result also using math library
     return f"{(factorial(n1) / factorial(n2)):.2f}"
 
