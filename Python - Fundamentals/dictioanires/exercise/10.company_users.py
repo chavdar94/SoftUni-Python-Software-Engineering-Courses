@@ -8,8 +8,7 @@ while command != 'End':
     employee_id = information[1]
     if company_name not in companies:
         companies[company_name] = []
-        if employee_id not in companies[company_name]:
-            companies[company_name].append(employee_id)
+        companies[company_name].append(employee_id)
     else:
         if employee_id not in companies[company_name]:
             companies[company_name].append(employee_id)
