@@ -1,4 +1,3 @@
-
 core_materials = {'shards': 0, 'fragments': 0, 'motes': 0}
 junk_materials = {}
 condition = False
