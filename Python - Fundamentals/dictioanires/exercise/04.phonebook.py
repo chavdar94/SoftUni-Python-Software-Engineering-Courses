@@ -8,8 +8,7 @@ while '-' in information:
     number = person_info[1]
     if name not in phonebook:
         phonebook[name] = number
-    else:
-        phonebook[name] = number
+    phonebook[name] = number
 
     information = input()
 
