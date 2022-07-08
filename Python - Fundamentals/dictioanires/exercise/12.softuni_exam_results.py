@@ -5,7 +5,6 @@ def add_student(dict, name, lang, score):
         dict[name]['points'] = score
 
 
-
 def remove_student(dict, name):
     if name in dict:
         del dict[name]
