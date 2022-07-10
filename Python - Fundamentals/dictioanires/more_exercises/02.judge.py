@@ -5,19 +5,17 @@ while data != 'no more time':
     username, contest, points = data.split(' -> ')
     points = int(points)
 
-    if contest not in judge:
-        judge[contest] = judge.get(contest, {})
+    judge[contest] = judge.get(contest, {})
     judge[contest][username] = judge[contest].get(username, 0)
     users[username] = users.get(username, 0)
 
-    if users[username] < points and judge[contest][username] == points:
-        users[username] = points
-    else:
-        users[username] += points - judge[contest][username]
+    if users[username] in users and users[username] == points:
+        users[username] += points
 
     if judge[contest][username] < points:
+        users[username] += points - judge[contest][username]
         judge[contest][username] = points
-
+        
     data = input()
 
 for current_contest in judge.keys():
