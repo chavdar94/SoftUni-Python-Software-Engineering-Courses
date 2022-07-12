@@ -15,7 +15,11 @@ while data != 'no more time':
     if judge[contest][username] < points:
         users[username] += points - judge[contest][username]
         judge[contest][username] = points
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> origin/main
     data = input()
 
 for current_contest in judge.keys():
@@ -25,4 +29,8 @@ for current_contest in judge.keys():
 
 print('Individual standings:')
 for pos, (user, points,) in enumerate(sorted(users.items(), key=lambda x: (-x[1], x[0])), 1):
+<<<<<<< HEAD
     print(f'{pos}. {user} -> {points}')
+=======
+    print(f'{pos}. {user} -> {points}')
+>>>>>>> origin/main
