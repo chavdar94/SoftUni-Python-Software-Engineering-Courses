@@ -17,7 +17,7 @@ def battle(dct, player1, player2):
                 if p_one_sum > p_two_sum:
                     del dct[player2]
                 elif p_one_sum < p_two_sum:
-                    del players_pool[player1]
+                    del dct[player1]
                 break
 
 
