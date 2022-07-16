@@ -2,12 +2,9 @@ data = input().split()
 
 total_sum = 0
 for text in data:
-    number = ''
-    letter = ''
+    number = text[1:-1]
     current_sum = 0
-    for symbol in text:
-        if symbol.isdigit():
-            number += symbol
+
     current_sum = int(number)
     if text[0].isupper():
         letter_position = ord(text[0]) - 64
