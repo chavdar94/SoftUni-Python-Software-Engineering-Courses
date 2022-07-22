@@ -1,6 +1,8 @@
 import re
 
 text = input()
-word = 'there'
+word = input()
 
-print(len(re.findall(word, text)))
+pattern = fr'\b{word}\b'
+matches = re.findall(pattern, text, flags=re.I)
+print(len(matches))
